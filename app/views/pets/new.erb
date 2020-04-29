@@ -3,7 +3,11 @@
 <form action="/pets" method="POST">
   <label>Pet Name:</label>
   <br>
+<<<<<<< HEAD
   <input type="text" name="pet_name">
+=======
+  <input type="text" name="pet[name]">
+>>>>>>> 84eaba2ffc7a2ce5be21e63a5f46fc218b436fbd
 
   <br>
   <p>Select an existing Owner or create a new one below.</p>
@@ -11,7 +15,11 @@
 
   <h3>Existing Owners</h3>
   <% @owners.each do |owner| %>
+<<<<<<< HEAD
     <input type="radio" name="pet[owner_id]" id="<%= owner.id %>" value="<%= owner.id %>"><%= owner.name %></input><br>
+=======
+    <input type="radiobutton" name="pet_name" id="<%= owner.id %>" value="<%= owner.id %>"><%= owner.name %></input><br>
+>>>>>>> 84eaba2ffc7a2ce5be21e63a5f46fc218b436fbd
   <% end %>
   <br>
 
